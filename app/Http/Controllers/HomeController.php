@@ -7,8 +7,17 @@ use Inertia\Inertia;
 
 class HomeController extends Controller
 {
-    public function show()
+    public function home()
     {
-        return Inertia::render('Home');
+        return Inertia::render('Home', [
+            'title' => 'Home page'
+        ]);
+    }
+
+    public function dashboard()
+    {
+        return Inertia::render('Dashboard', [
+            'title' => 'Dashboard'
+        ]);
     }
 }

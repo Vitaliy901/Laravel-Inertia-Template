@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Model\Filter;
+namespace App\Models\Filters;
 
-class UsersFilter extends AbstractQueryFilter
+class UserFilter extends AbstractQueryFilter
 {
     public function firstName(string $param): void
     {
